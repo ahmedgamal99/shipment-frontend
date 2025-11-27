@@ -1,7 +1,8 @@
-import type { Route } from "./+types/home";
+// Removed unused/broken Route type import; not required for this file.
 import { Welcome } from "../welcome/welcome";
+import { Button } from "~/components/ui/button";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "New React Router App" },
     { name: "description", content: "Welcome to React Router!" },
@@ -9,5 +10,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <Button> Welcome </Button>;
 }
