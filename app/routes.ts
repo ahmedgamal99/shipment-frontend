@@ -8,4 +8,5 @@ export default [
     route("partner/forgot-password", "routes/partner/forgot-password.tsx"),
     route("/dashboard", "routes/dashboard.tsx"),
     route("account", "routes/account.tsx"),
+    route("/submit-shipment", "routes/seller/submit-shipment.tsx"),
 ] satisfies RouteConfig;

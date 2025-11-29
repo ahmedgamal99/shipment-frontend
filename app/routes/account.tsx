@@ -2,7 +2,6 @@ import { useQuery } from "@tanstack/react-query"
 import { useContext } from "react"
 import { Navigate } from "react-router"
 import { AppSidebar } from "~/components/app-sidebar"
-import ShipmentCard from "~/components/shipment-card"
 import { Button } from "~/components/ui/button"
 import { Input } from "~/components/ui/input"
 import { Label } from "~/components/ui/label"
@@ -15,8 +14,8 @@ import {
 } from "~/components/ui/sidebar"
 import { AuthContext } from "~/contexts/AuthContext"
 import api from "~/lib/api"
-import { ShipmentStatus } from "~/lib/client"
-import { getShipmentsCountForStatus } from "~/lib/utils"
+
+
 
 export default function AccountPage() {
 
