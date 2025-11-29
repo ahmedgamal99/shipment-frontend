@@ -806,6 +806,24 @@ export class Api<
      * No description
      *
      * @tags seller
+     * @name GetShipments
+     * @summary Get Shipments
+     * @request GET:/seller/shipments
+     * @secure
+     */
+    getShipments: (params: RequestParams = {}) =>
+      this.request<ShipmentRead[], any>({
+        path: `/seller/shipments`,
+        method: "GET",
+        secure: true,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags seller
      * @name ForgotPassword
      * @summary Forgot Password
      * @request GET:/seller/forgot_password
@@ -983,6 +1001,24 @@ export class Api<
         body: data,
         secure: true,
         type: ContentType.Json,
+        format: "json",
+        ...params,
+      }),
+
+    /**
+     * No description
+     *
+     * @tags delivery partner
+     * @name GetShipments
+     * @summary Get Shipments
+     * @request GET:/partner/shipments
+     * @secure
+     */
+    getShipments: (params: RequestParams = {}) =>
+      this.request<ShipmentRead[], any>({
+        path: `/partner/shipments`,
+        method: "GET",
+        secure: true,
         format: "json",
         ...params,
       }),
